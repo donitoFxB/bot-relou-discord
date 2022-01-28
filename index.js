@@ -16,6 +16,7 @@ Client.on("ready", () => {
 Client.on("messageCreate", message => {
     if(message.author.bot) return;
     texte = message.content
+
     if(texte.endsWith("quoi") == true ){
        
         message.channel.send("feur")
@@ -23,4 +24,4 @@ Client.on("messageCreate", message => {
 }) ;
 
 
-Client.login("OTI1ODY2MDI4MzE4MjEyMTA2.YczV7g.pGnpdw9pFz3kSuMdcE1XcAURUHg") ; 
+Client.login(process.env.TOKEN) ; 
